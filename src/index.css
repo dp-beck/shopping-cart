@@ -1,5 +1,10 @@
 body {
+  background-image: url(./assets/animal-crossing-background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   margin: 0;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,101 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+h1 {
+  margin: 0;
+  color: rgb(238, 237, 218);
+  background-color: black;
+}
+
+.home-description {
+  background-color: darkblue;
+  color: antiquewhite;
+  width: fit-content;
+  margin: auto;
+  margin-top: 25vh;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.nav-links {
+  background-color: rgb(35, 67, 150);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.link-text {
+  list-style-type: none;
+  color: aliceblue;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vh;
+}
+
+.fish-card {
+  list-style: none;
+  color: darkslategrey;
+  font-weight: 900;
+  background-color: burlywood;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: fit-content;
+  width: min-content;
+  padding-bottom: 10px;
+  box-shadow: 10px 5px 5px whitesmoke;
+}
+
+.fish-card button, .cart button {
+  border-radius: 10px;
+  background-color: aliceblue;
+  color: red;
+  font-weight: bolder;
+}
+
+.fish-picture {
+  width: 35vh;
+}
+
+.cart {
+  position: absolute;
+  z-index: auto;
+  height: 100%;
+  top: 0px;
+  background-color: white;
+  border: 2px solid brown;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.cart-button-wrapper {
+  background-color: black;
+}
+
+.cart-button {
+  cursor: pointer;
+  font-style: italic;
+  font-size: 1em;
+  border: 2px solid white;
+  background-color: burlywood;
+  border-radius: 10px;
 }

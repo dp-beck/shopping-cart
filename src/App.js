@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Shop from "./Shop";
 import NotFound from "./NotFound";
@@ -52,7 +52,7 @@ const updateTotalItemsInCart = () => {
   }
 
     return (
-      <BrowserRouter>
+      <HashRouter>
         <nav>
           <ul className="nav-links">
             <Link to='/'>
@@ -73,7 +73,7 @@ const updateTotalItemsInCart = () => {
                                         updateCart={updateCart}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     );
   };
   

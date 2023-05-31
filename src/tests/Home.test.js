@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Home from '../Home';
 
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Animal Crossing Fish Market/i);
+  render(<Home />);
+  const linkElement = screen.getByText(/Welcome to the Animal Crossing Fish Market/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.54894f09.css",
+    "main.js": "/shopping-cart/static/js/main.8d1e86f0.js",
+    "static/media/animal-crossing-background.png": "/shopping-cart/static/media/animal-crossing-background.085f3597fcf2a91ecc3b.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.54894f09.css.map": "/shopping-cart/static/css/main.54894f09.css.map",
+    "main.8d1e86f0.js.map": "/shopping-cart/static/js/main.8d1e86f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54894f09.css",
+    "static/js/main.8d1e86f0.js"
+  ]
+}
